@@ -1,3 +1,19 @@
+<div>
+  <h2>Informations</h2>
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Générales">
+          <div *ngFor="let new of news">
+              <p *ngIf="new.isInfo">{{ new.name }} : {{ new.description }}</p>
+          </div>
+        </mat-tab>
+        <mat-tab label="Actualités"> 
+            <div *ngFor="let new of news">
+                <p *ngIf="!new.isInfo">{{ new.name }} : {{ new.description }}</p>
+            </div>
+        </mat-tab>
+      </mat-tab-group>
+</div>
+
 <div *ngFor="let push of pushs">
   <ngb-alert type="danger" (close)="close(alert)">
     <div>
@@ -7,7 +23,8 @@
   </ngb-alert>
 </div>
 
-<div class="card" *ngFor="let event of events" style="width: 18rem;">
+<div *ngFor="let event of events">
+<div class="card" style="width: 18rem;">
   <img [src]="event.image" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{ event.name }}</h5>
@@ -15,3 +32,8 @@
     <a href="#" class="btn btn-primary">{{ event.start_date }}</a>
   </div>
 </div>
+</div>
+
+<div id="frugalmap">
+
+  </div>
