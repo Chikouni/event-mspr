@@ -1,0 +1,24 @@
+<div class="content artiste">
+     <img src="assets/images/logo.png" style="width: 161px; height: auto; padding-top: 7px;" class="mx-auto d-block">
+     <div class="divartist" style="margin-top: -30px;">
+         <h2>{{ artist.acf.artiste_name }}</h2>
+         <img [src]="artist.acf.artiste_image" width="100%" height="200px" style="border-radius: 0px 0px 30px 30px;">
+         <div style=" margin-top: 15px;   text-align: center;">
+                <p style="display: inline; color: #CA6146;letter-spacing: 1.92px; font-size: 22px;">{{ day }}</p><p style="display: inline; font-size: 22px; color: white"> • </p><p style="display: inline; color: #F2D33F; letter-spacing: 1.92px; font-size: 22px;
+       ">{{ hour }}</p>
+                <p style="color: #0098A2;letter-spacing: 1.92px; font-size: 22px;">SCÈNE {{ artist.acf.stage_name[0].post_name }}</p>
+         </div>
+         <div style="width: 85%; margin: auto">
+          <p style="color: white; font-size: 20px; font-family: 'Montserrat', sans-serif;
+          ">Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et <strong>Eleutheropolim</strong> et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.</p>
+          <h3 style="margin-top: 15px;margin-bottom: 2px; color: white; font-family: 'Montserrat', sans-serif;
+          "> Ex turba vero imae</h3>
+          <p style="margin-bottom: 30px; color: white; font-size: 20px; font-family: 'Montserrat', sans-serif;
+          ">sortis et paupertinae in tabernis aliqui pernoctant vinariis, non nulli velariis umbraculorum theatralium latent, quae Campanam imitatus lasciviam Catulus in aedilitate sua suspendit omnium primus; aut pugnaciter aleis certant turpi sono fragosis naribus introrsum reducto spiritu concrepantes; aut quod est studiorum omnium maximum ab ortu lucis ad vesperam sole fatiscunt vel pluviis, per minutias aurigarum equorumque praecipua vel delicta scrutantes.</p>
+         </div>
+     </div>
+     <iframe width="100%" height="181px" src="https://www.youtube.com/embed/Duyqu1082M0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <a href="{{ artist.acf.artiste_instagram }}">
+            <img style="margin-top: 30px" src="assets/images/instagram.png" class="mx-auto d-block" width="48" height="48">
+     </a>
+     </div>

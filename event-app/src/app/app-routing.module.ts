@@ -1,3 +1,4 @@
+import { ArtisteDetailComponent } from './artiste-detail/artiste-detail.component';
 import { ConcertsSabComponent } from './concerts-sab/concerts-sab.component';
 import { HomeComponent } from './home/home.component';
 import { ConcertsComponent } from './concerts/concerts.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent },
   {path: 'concerts/vendredi', component: ConcertsComponent},
   {path: 'concerts/samedi', component: ConcertsSabComponent},
-  {path: 'concerts/dimanche', component: ConcertsDomComponent}
+  {path: 'concerts/dimanche', component: ConcertsDomComponent},
+  {path: 'concerts/:id', component: ArtisteDetailComponent}
 ];
 
 @NgModule({

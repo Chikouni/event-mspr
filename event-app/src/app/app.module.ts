@@ -11,6 +11,7 @@ import { ConcertsComponent } from './concerts/concerts.component';
 import { HomeComponent } from './home/home.component';
 import { ConcertsSabComponent } from './concerts-sab/concerts-sab.component';
 import { ConcertsDomComponent } from './concerts-dom/concerts-dom.component';
+import { ArtisteDetailComponent } from './artiste-detail/artiste-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ConcertsDomComponent } from './concerts-dom/concerts-dom.component';
     ConcertsComponent,
     HomeComponent,
     ConcertsSabComponent,
-    ConcertsDomComponent
+    ConcertsDomComponent,
+    ArtisteDetailComponent
   ],
   imports: [
     BrowserModule,
