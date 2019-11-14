@@ -10,7 +10,6 @@ const routes: Routes = [
   { path: '', redirectTo: '/map', pathMatch: 'full' },
   {path: 'map', component: MapComponent },
   {path: 'concerts', component: ConcertsComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'concerts/vendredi', component: ConcertsComponent},
   {path: 'concerts/samedi', component: ConcertsSabComponent},
   {path: 'concerts/dimanche', component: ConcertsDomComponent}
