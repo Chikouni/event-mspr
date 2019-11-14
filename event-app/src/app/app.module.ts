@@ -9,12 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material';
 import { ConcertsComponent } from './concerts/concerts.component';
 import { HomeComponent } from './home/home.component';
+import { ConcertsSabComponent } from './concerts-sab/concerts-sab.component';
+import { ConcertsDomComponent } from './concerts-dom/concerts-dom.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConcertsComponent,
-    HomeComponent
+    HomeComponent,
+    ConcertsSabComponent,
+    ConcertsDomComponent
   ],
   imports: [
     BrowserModule,

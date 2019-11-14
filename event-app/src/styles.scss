@@ -30,6 +30,7 @@ $event-app-theme: mat-light-theme($event-app-primary, $event-app-accent, $event-
 
 @import 'assets/scss/layout.scss';
 @import 'assets/scss/carte.scss';
+@import 'assets/scss/concerts.scss';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

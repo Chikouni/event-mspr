@@ -1,5 +1,139 @@
+<div class="content concerts">
+    <div class="background">
+      </div>
+ <div class="container" style="position: absolute;">
+         <img src="assets/images/logo.png" style="width: 161px; height: auto; padding-top: 7px;" class="mx-auto d-block">
+         <div class="programmation">
+           <h2 style="margin-bottom: 20px">Programmation</h2>
+           <div class="days">
+             <div class="day ven" style="border-bottom: 3px solid #CB6247;">
+               <p style="font-size: 25px; letter-spacing: 2.28px; text-align: left;">12 JUIN</p>
+               <p style="font-size: 39px; letter-spacing: 2.28px; text-align: center; margin-top: -34px; margin-bottom: 0px">VEN</p>
+             </div>
+             <div (click)="goSamedi()" class="day sam" style="text-align: center;border-bottom: 3px solid white;">
+                <p style="font-size: 25px; letter-spacing: 2.28px; text-align: left;">13 JUIN</p>
+                <p style="font-size: 39px; letter-spacing: 2.28px; text-align: center; margin-top: -34px; margin-bottom: 0px">SAM</p></div>
+             <div (click)="goDimanche()" class="day dim" style="text-align: right;border-bottom: 3px solid white;">
+                <p style="font-size: 25px; letter-spacing: 2.28px; text-align: left;">14 JUIN</p>
+                <p style="font-size: 39px; letter-spacing: 2.28px; text-align: center; margin-top: -34px; margin-bottom: 0px">DIM</p></div>
+           </div>
+           <div class="filtres">
+              <div [className]="hour ? 'filtreactif' : 'filtreblanc'" (click)="byHour()" style="text-align: center">Par heure</div>
+              <div  [className]="lieu ? 'filtreactif' : 'filtreblanc'" (click)="byLieu()" style="text-align: center">Par lieu</div>
+              <div  [className]="rencontres ? 'filtreactif' : 'filtreblanc'" style="text-align: center">Rencontre</div>
+            </div>
 
-<div *ngFor="let event of events">
+         <h3 style="text-align: center; font-family: 'Staatliches', regular; letter-spacing: 4px; font-size: 37px; margin-bottom: 20px;">VENDREDI 12 JUIN</h3>
+ 
+ <div *ngIf="!lieu">
+         <div class="row cardsss" *ngFor="let event of events; let i = index">
+            <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
+            <div style="width: 45%">
+              <div class="card1">
+                <div style="position: relative;">
+                  <img class="card2" [src]="event.image">
+                  <span class="card3">{{ event.name }}</span>
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="lieu">
+            <h3 class="scene" style="color: #0098A2!important">Scène Nation</h3>
+              <div class="row cardsss" *ngFor="let event of events; let i = index">
+                 <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
+                 <div style="width: 45%" *ngIf="event.stage[0].post_name === 'nation'">
+                   <div class="card1">
+                     <div style="position: relative;">
+                       <img class="card2" [src]="event.image">
+                       <span class="card3">{{ event.name }}</span>
+                     </div>
+                   </div>
+                   </div>
+                 </div>
+
+                 <h3 class="scene" style="color: #F3D43C!important">Scène Varenne</h3>
+              <div class="row cardsss" *ngFor="let event of events; let i = index">
+                 <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
+                 <div style="width: 45%" *ngIf="event.stage[0].post_name === 'varenne'">
+                   <div class="card1">
+                     <div style="position: relative;">
+                       <img class="card2" [src]="event.image">
+                       <span class="card3">{{ event.name }}</span>
+                     </div>
+                   </div>
+                   </div>
+                 </div>
+
+                 <h3 class="scene" style="color: #CB6247!important">Scène Opéra</h3>
+              <div class="row cardsss" *ngFor="let event of events; let i = index">
+                 <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
+                 <div style="width: 45%" *ngIf="event.stage[0].post_name === 'opéra'">
+                   <div class="card1">
+                     <div style="position: relative;">
+                       <img class="card2" [src]="event.image">
+                       <span class="card3">{{ event.name }}</span>
+                     </div>
+                   </div>
+                   </div>
+                 </div>
+
+               <h3 class="scene" style="color: #0098A2!important">Scène Garibaldi</h3>
+              <div class="row cardsss" *ngFor="let event of events; let i = index">
+                 <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
+                 <div style="width: 45%" *ngIf="event.stage[0].post_name === 'garibaldi'">
+                   <div class="card1">
+                     <div style="position: relative;">
+                       <img class="card2" [src]="event.image">
+                       <span class="card3">{{ event.name }}</span>
+                     </div>
+                   </div>
+                   </div>
+                 </div>
+
+                 <h3 class="scene" style="color: #F3D43C!important">Scène Plaisance</h3>
+              <div class="row cardsss" *ngFor="let event of events; let i = index">
+                 <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
+                 <div style="width: 45%" *ngIf="event.stage[0].post_name === 'plaisance'">
+                   <div class="card1">
+                     <div style="position: relative;">
+                       <img class="card2" [src]="event.image">
+                       <span class="card3">{{ event.name }}</span>
+                     </div>
+                   </div>
+                   </div>
+                 </div>
+
+                 <h3 class="scene" style="color: #CB6247!important">Scène Monceau</h3>
+              <div class="row cardsss" *ngFor="let event of events; let i = index">
+                 <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
+                 <div style="width: 45%" *ngIf="event.stage[0].post_name === 'monceau'">
+                   <div class="card1">
+                     <div style="position: relative;">
+                       <img class="card2" [src]="event.image">
+                       <span class="card3">{{ event.name }}</span>
+                     </div>
+                   </div>
+                   </div>
+                 </div>
+ 
+ </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div *ngFor="let event of events">
         <div class="card" style="width: 18rem;">
           <img [src]="event.image" class="card-img-top" alt="...">
           <div class="card-body">
@@ -8,4 +142,4 @@
             <a href="#" class="btn btn-primary">{{ event.start_date }}</a>
           </div>
         </div>
-    </div>
+    </div> -->
