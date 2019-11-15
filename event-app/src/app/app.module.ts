@@ -14,6 +14,7 @@ import { ConcertsDomComponent } from './concerts-dom/concerts-dom.component';
 import { ArtisteDetailComponent } from './artiste-detail/artiste-detail.component';
 import { SocialComponent } from './social/social.component';
 import { BilleterieComponent } from './billeterie/billeterie.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BilleterieComponent } from './billeterie/billeterie.component';
     ConcertsDomComponent,
     ArtisteDetailComponent,
     SocialComponent,
-    BilleterieComponent
+    BilleterieComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
