@@ -15,6 +15,7 @@ import { ArtisteDetailComponent } from './artiste-detail/artiste-detail.componen
 import { SocialComponent } from './social/social.component';
 import { BilleterieComponent } from './billeterie/billeterie.component';
 import { NewsComponent } from './news/news.component';
+import { PartenairesComponent } from './partenaires/partenaires.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NewsComponent } from './news/news.component';
     ArtisteDetailComponent,
     SocialComponent,
     BilleterieComponent,
-    NewsComponent
+    NewsComponent,
+    PartenairesComponent
   ],
   imports: [
     BrowserModule,

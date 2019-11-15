@@ -1,3 +1,4 @@
+import { PartenairesComponent } from './partenaires/partenaires.component';
 import { NewsComponent } from './news/news.component';
 import { BilleterieComponent } from './billeterie/billeterie.component';
 import { SocialComponent } from './social/social.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent },
   {path: 'social', component: SocialComponent },
   {path: 'billeterie', component: BilleterieComponent },
+  {path: 'partenaires', component: PartenairesComponent },
   {path: 'actualites', component: NewsComponent },
   {path: 'concerts/vendredi', component: ConcertsComponent},
   {path: 'concerts/samedi', component: ConcertsSabComponent},
