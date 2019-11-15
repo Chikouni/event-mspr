@@ -3,8 +3,8 @@ import { NewsComponent } from './news/news.component';
 import { BilleterieComponent } from './billeterie/billeterie.component';
 import { SocialComponent } from './social/social.component';
 import { ArtisteDetailComponent } from './artiste-detail/artiste-detail.component';
+import { MapComponent } from './map/map.component';
 import { ConcertsSabComponent } from './concerts-sab/concerts-sab.component';
-import { HomeComponent } from './home/home.component';
 import { ConcertsComponent } from './concerts/concerts.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -12,12 +12,13 @@ import { ConcertsDomComponent } from './concerts-dom/concerts-dom.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  {path: 'home', component: HomeComponent },
   {path: 'social', component: SocialComponent },
   {path: 'billeterie', component: BilleterieComponent },
   {path: 'partenaires', component: PartenairesComponent },
   {path: 'actualites', component: NewsComponent },
+  { path: '', redirectTo: '/map', pathMatch: 'full' },
+  {path: 'map', component: MapComponent },
+  {path: 'concerts', component: ConcertsComponent},
   {path: 'concerts/vendredi', component: ConcertsComponent},
   {path: 'concerts/samedi', component: ConcertsSabComponent},
   {path: 'concerts/dimanche', component: ConcertsDomComponent},
