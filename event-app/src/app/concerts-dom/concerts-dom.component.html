@@ -27,6 +27,7 @@
  
  <div *ngIf="!lieu">
          <div class="row cardsss" *ngFor="let event of events; let i = index">
+            <a [routerLink]="['/concerts', event.id]">
             <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
             <div style="width: 45%">
               <div class="card1">
@@ -37,12 +38,15 @@
               </div>
 
               </div>
+            </a>
             </div>
           </div>
 
           <div *ngIf="lieu">
             <h3 class="scene" style="color: #0098A2!important">Scène Nation</h3>
               <div class="row cardsss" *ngFor="let event of events; let i = index">
+                  <a [routerLink]="['/concerts', event.id]">
+
                  <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
                  <div style="width: 45%" *ngIf="event.stage[0].post_name === 'nation'">
                    <div class="card1">
@@ -52,10 +56,13 @@
                      </div>
                    </div>
                    </div>
+                  </a>
                  </div>
 
                  <h3 class="scene" style="color: #F3D43C!important">Scène Varenne</h3>
               <div class="row cardsss" *ngFor="let event of events; let i = index">
+                  <a [routerLink]="['/concerts', event.id]">
+
                  <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
                  <div style="width: 45%" *ngIf="event.stage[0].post_name === 'varenne'">
                    <div class="card1">
@@ -65,10 +72,12 @@
                      </div>
                    </div>
                    </div>
+                   </a>
                  </div>
 
                  <h3 class="scene" style="color: #CB6247!important">Scène Opéra</h3>
               <div class="row cardsss" *ngFor="let event of events; let i = index">
+                  <a [routerLink]="['/concerts', event.id]">
                  <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
                  <div style="width: 45%" *ngIf="event.stage[0].post_name === 'opéra'">
                    <div class="card1">
@@ -78,10 +87,12 @@
                      </div>
                    </div>
                    </div>
+                  </a>
                  </div>
 
                <h3 class="scene" style="color: #0098A2!important">Scène Garibaldi</h3>
               <div class="row cardsss" *ngFor="let event of events; let i = index">
+                  <a [routerLink]="['/concerts', event.id]">
                  <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
                  <div style="width: 45%" *ngIf="event.stage[0].post_name === 'garibaldi'">
                    <div class="card1">
@@ -91,10 +102,13 @@
                      </div>
                    </div>
                    </div>
+                  </a>
                  </div>
 
                  <h3 class="scene" style="color: #F3D43C!important">Scène Plaisance</h3>
               <div class="row cardsss" *ngFor="let event of events; let i = index">
+                  <a [routerLink]="['/concerts', event.id]">
+
                  <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
                  <div style="width: 45%" *ngIf="event.stage[0].post_name === 'plaisance'">
                    <div class="card1">
@@ -104,10 +118,12 @@
                      </div>
                    </div>
                    </div>
+                  </a>
                  </div>
 
                  <h3 class="scene" style="color: #CB6247!important">Scène Monceau</h3>
               <div class="row cardsss" *ngFor="let event of events; let i = index">
+                  <a [routerLink]="['/concerts', event.id]">
                  <!-- [ngClass]="i % 2 != 0 ? 'new-right' : 'left'" -->
                  <div style="width: 45%" *ngIf="event.stage[0].post_name === 'monceau'">
                    <div class="card1">
@@ -117,6 +133,7 @@
                      </div>
                    </div>
                    </div>
+                  </a>
                  </div>
  
  </div>

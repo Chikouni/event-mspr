@@ -14,14 +14,31 @@ body {
     top: -464.248352px;
     left: -90.799072px;
     position: absolute;
-    width: 832px;
-    height: 1000px;
-    transform: matrix(0.47, 0.88, -0.88, 0.47, 0, 0);
+    width: 100%;
+}
+
+.backgroundrs{
+    background-image: url(assets/images/Reseaux-Sociaux.png);
+    background-size: 100% auto;
+    width: 376px;
+    height: 351px;
+    position: absolute;
 }
 
 p {
     font-family: 'Staatliches', regular;
 
+}
+
+.h22 {
+    text-transform: uppercase;
+    font-family: 'Staatliches', regular;
+    text-align: center;
+    font-size: 42px;
+letter-spacing: 3.6px;
+color: rgba(78, 73, 73, 0);
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #fff;
 }
 
 .programmation {
@@ -30,7 +47,7 @@ p {
     h2 {
         text-transform: uppercase;
         font-family: 'Staatliches', regular;
-        text-align: left;
+        text-align: center;
         font-size: 42px;
 letter-spacing: 3.6px;
 color: rgba(78, 73, 73, 0);
