@@ -3,6 +3,7 @@ import { NewsEvent } from './../global/news.model';
 import { PushModel } from './../global/push.model';
 import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit {
   news: NewsEvent[] = [];
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
     this.http.get<[]>('https://mspr.chloe-gautreau.com/wp-json/wp/v2/push').subscribe(resPushs => {
@@ -80,6 +81,10 @@ export class HomeComponent implements OnInit {
 
   close(push) {
     this.pushs.splice(this.pushs.indexOf(push), 1);
+  }
+  
+  onClick(){
+    this.router.navigate(['/concerts/vendredi'])
   }
   
 
