@@ -1,3 +1,4 @@
+import { SocialComponent } from './social/social.component';
 import { ArtisteDetailComponent } from './artiste-detail/artiste-detail.component';
 import { ConcertsSabComponent } from './concerts-sab/concerts-sab.component';
 import { HomeComponent } from './home/home.component';
@@ -10,6 +11,7 @@ import { ConcertsDomComponent } from './concerts-dom/concerts-dom.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home', component: HomeComponent },
+  {path: 'social', component: SocialComponent },
   {path: 'concerts/vendredi', component: ConcertsComponent},
   {path: 'concerts/samedi', component: ConcertsSabComponent},
   {path: 'concerts/dimanche', component: ConcertsDomComponent},

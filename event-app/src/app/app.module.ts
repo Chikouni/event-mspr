@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { ConcertsSabComponent } from './concerts-sab/concerts-sab.component';
 import { ConcertsDomComponent } from './concerts-dom/concerts-dom.component';
 import { ArtisteDetailComponent } from './artiste-detail/artiste-detail.component';
+import { SocialComponent } from './social/social.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ArtisteDetailComponent } from './artiste-detail/artiste-detail.componen
     HomeComponent,
     ConcertsSabComponent,
     ConcertsDomComponent,
-    ArtisteDetailComponent
+    ArtisteDetailComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
