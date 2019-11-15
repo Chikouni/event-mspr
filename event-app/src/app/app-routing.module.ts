@@ -1,3 +1,5 @@
+import { PartenairesComponent } from './partenaires/partenaires.component';
+import { NewsComponent } from './news/news.component';
 import { BilleterieComponent } from './billeterie/billeterie.component';
 import { SocialComponent } from './social/social.component';
 import { ArtisteDetailComponent } from './artiste-detail/artiste-detail.component';
@@ -12,6 +14,8 @@ import { ConcertsDomComponent } from './concerts-dom/concerts-dom.component';
 const routes: Routes = [
   {path: 'social', component: SocialComponent },
   {path: 'billeterie', component: BilleterieComponent },
+  {path: 'partenaires', component: PartenairesComponent },
+  {path: 'actualites', component: NewsComponent },
   { path: '', redirectTo: '/map', pathMatch: 'full' },
   {path: 'map', component: MapComponent },
   {path: 'concerts', component: ConcertsComponent},
