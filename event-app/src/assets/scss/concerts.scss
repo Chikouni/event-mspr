@@ -24,6 +24,14 @@ body {
     height: 351px;
     position: absolute;
 }
+.backgroundb{
+    background-image: url(assets/images/Billetterie.png);
+
+    background-size: 100% auto;
+    width: 378px;
+    height: 351px;
+    position: absolute;
+}
 
 p {
     font-family: 'Staatliches', regular;
@@ -33,7 +41,7 @@ p {
 .h22 {
     text-transform: uppercase;
     font-family: 'Staatliches', regular;
-    text-align: center;
+    text-align: left;
     font-size: 42px;
 letter-spacing: 3.6px;
 color: rgba(78, 73, 73, 0);
